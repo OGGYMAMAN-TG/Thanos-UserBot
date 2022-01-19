@@ -56,7 +56,7 @@ print(f"""Hello sir i am THANOS!! THANOS VERSION :- {THANOSversion} YOUR THANOS 
 
 
 
-    try:
+   
         await bot(JoinChannelRequest("@thanos_userbots"))
     except BaseException:
         pass
