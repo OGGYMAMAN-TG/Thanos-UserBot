@@ -57,55 +57,12 @@ print(f"""Hello sir i am THANOS!! THANOS VERSION :- {THANOSversion} YOUR THANOS 
 
 
    
-        await bot(JoinChannelRequest("@thanos_userbots"))
-    except BaseException:
-        pass
-    try:
-        if H2:
-            await H2(JoinChannelRequest("@thanos_userbots"))
-    except BaseException:
-        pass
-    try:
-        if H3:
-            await H3(JoinChannelRequest("@thanos_userbots"))
-    except BaseException:
-        pass
-    try:
-        if H4:
-            await H4(JoinChannelRequest("@thanos_userbots"))
-    except BaseException:
-        pass
-    try:
-        if H5:
-            await H5(JoinChannelRequest("@thanos_userbots"))
-    except BaseException:
-        pass
 # Why not come here and chat??
     try:
         await bot(ImportChatInviteRequest('thanosbot_chats'))
     except BaseException:
         pass
-    try:
-        if H2:
-            await H2(ImportChatInviteRequest('thanosbot_chats'))
-    except BaseException:
-        pass
-    try:
-        if H3:
-            await H3(ImportChatInviteRequest('thanosbot_chats'))
-    except BaseException:
-        pass
-    try:
-        if H4:
-            await H4(ImportChatInviteRequest('thanosbot_chats'))
-    except BaseException:
-        pass
-    try:
-        if H5:
-            await H5(ImportChatInviteRequest('thanosbot_chats'))
-    except BaseException:
-        pass
-
+    
 
 
 
