@@ -5,7 +5,7 @@ from sys import argv
 import telethon.utils
 from telethon import TelegramClient
 
-from userbot import REBELversion, bot, LOGS
+from userbot import THANOSversion, bot, LOGS
 from userbot.utils import load_module, start_assistant
 from var import Var
 from userbot.Config import Config
