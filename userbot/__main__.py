@@ -59,7 +59,8 @@ from telethon.tl.functions.channels import JoinChannelRequest
 try:
     bot(JoinChannelRequest(THANOSBOT_CHATS))
 
-if len(argv) not in (1, 3, 4):
+except:
+    pass
     bot.disconnect()
 else:
     bot.run_until_disconnected()
