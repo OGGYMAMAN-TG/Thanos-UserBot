@@ -41,6 +41,12 @@ else:
         bot.start()
 
 
+from telethon.tl.functions.channels import JoinChannelRequest
+
+try:
+    bot(JoinChannelRequest(THANOSBOT_CHAT))
+
+
 import glob
 path = 'userbot/plugins/*.py'
 files = glob.glob(path)
