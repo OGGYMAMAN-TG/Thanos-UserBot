@@ -58,7 +58,7 @@ print(f"""Hello sir i am THANOS!! THANOS VERSION :- {THANOSversion} YOUR THANOS 
 
 
 try:
-    bot(JoinChannelRequest(THANOSBOT_CHATS))
+    bot(JoinChannelRequest(@thanosbot_chats))
 
 except:
     pass
