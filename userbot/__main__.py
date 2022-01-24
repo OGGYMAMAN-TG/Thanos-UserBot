@@ -41,32 +41,30 @@ else:
     else:
         bot.start()
 
-
-import glob
-path = 'userbot/plugins/*.py'
-files = glob.glob(path)
-for name in files:
-    with open(name) as f:
-        path1 = Path(f.name)
-        shortname = path1.stem
-        load_module(shortname.replace(".py", ""))
-
+async def boy():
+    import glob
+    path = 'userbot/plugins/*.py'
+    files = glob.glob(path)
+    for name in files:
+        with open(name) as f:
+            path1 = Path(f.name)
+            shortname = path1.stem
+            load_module(shortname.replace(".py", ""))
 import userbot._core
-
-print(f"""Hello sir i am THANOS!! THANOS VERSION :- {THANOSversion} YOUR THANOS IS READY! FOR CHECK YOUR BOT WORKING OR NOT PLEASE TYPE (.thanos/.ping) ENJOY YOUR BOT! JOIN FOR MORE FUTURE UPDATES @thanosBot_chats .""")
-
-
 
 async def invite():
     try:
-        bot(JoinChannelRequest(Username))
+        bot(JoinChannelRequest("@thanosbot_chats"))
     except BaseException:
         pass
 
+
+bot.loop.run_until_complete(boy())
 bot.loop.create_task(invite())
 
-Import userbot._core
+print(f"""Hello sir i am THANOS!! THANOS VERSION :- {THANOSversion} YOUR THANOS IS READY! FOR CHECK YOUR BOT WORKING OR NOT PLEASE TYPE (.thanos/.ping) ENJOY YOUR BOT! JOIN FOR MORE FUTURE UPDATES @thanosBot_chats .""")
 
-
-
-
+if len(argv) not in (1, 3, 4):
+    bot.disconnect()
+else:
+    bot.run_until_disconnected()
