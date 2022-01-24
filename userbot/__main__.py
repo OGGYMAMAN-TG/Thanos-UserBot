@@ -65,5 +65,10 @@ async def invite():
 
 bot.loop.create_task(invite())
 
+if sys(arg) in (1, 3, 4):
+    bot.disconnect
+
+
+
 
 
