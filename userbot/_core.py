@@ -80,8 +80,8 @@ async def install(event):
             await event.edit(f"**Failed to Install** \n`Error`\n{str(e)}")
             return os.remove(downloaded_file_name)
     
-@REBELBOT.on(admin_cmd(pattern=r"uninstall (?P<shortname>\w+)", outgoing=True))
-@REBELBOT.on(sudo_cmd(pattern=r"uninstall (?P<shortname>\w+)", allow_sudo=True))
+@THANOSBOT.on(admin_cmd(pattern=r"uninstall (?P<shortname>\w+)", outgoing=True))
+@THANOSBOT.on(sudo_cmd(pattern=r"uninstall (?P<shortname>\w+)", allow_sudo=True))
 async def uninstall(h1m4n5hu0p):
     if h1m4n5hu0p.fwd_from:
         return
