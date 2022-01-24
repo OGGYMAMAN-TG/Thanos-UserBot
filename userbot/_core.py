@@ -5,9 +5,9 @@ from pathlib import Path
 from telethon import events
 from telethon import functions, types
 from telethon.tl.types import InputMessagesFilterDocument
-from REBELBOT.utils import *
+from THANOSBOT.utils import *
 from userbot import *
-from userbot import bot as REBELBOT
+from userbot import bot as THANOSBOT
 
 DELETE_TIMEOUT = 5
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "REBEL User"
