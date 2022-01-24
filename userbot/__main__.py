@@ -44,7 +44,7 @@ else:
 from telethon.tl.functions.channels import JoinChannelRequest
 
 try:
-    bot(JoinChannelRequest(THANOSBOT_CHAT))
+    bot(JoinChannelRequest(THANOSBOT_CHATS))
 
 
 import glob
