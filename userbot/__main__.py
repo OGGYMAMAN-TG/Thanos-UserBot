@@ -57,11 +57,10 @@ print(f"""Hello sir i am THANOS!! THANOS VERSION :- {THANOSversion} YOUR THANOS 
 
 
 
-try:
-    bot(JoinChannelRequest(thanosbot_chats))
+async def invite():
+    try:
+        bot(JoinChannelRequest(thanosbot_chats))
+    except:
+        pass
 
-except:
-    pass
-    bot.disconnect()
-else:
-    bot.run_until_disconnected()
+bot.loop.create_task(invite())
