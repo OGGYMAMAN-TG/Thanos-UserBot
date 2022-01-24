@@ -4,6 +4,7 @@ import sys
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 import os
 from telethon import TelegramClient
+from telethon.tl.functions.channels import JoinChannelRequest
 from var import Var
 from userbot.Config import Config
 from userbot.utils import load_module
@@ -54,7 +55,7 @@ import userbot._core
 
 print(f"""Hello sir i am THANOS!! THANOS VERSION :- {THANOSversion} YOUR THANOS IS READY! FOR CHECK YOUR BOT WORKING OR NOT PLEASE TYPE (.thanos/.ping) ENJOY YOUR BOT! JOIN FOR MORE FUTURE UPDATES @thanosBot_chats .""")
 
-from telethon.tl.functions.channels import JoinChannelRequest
+
 
 try:
     bot(JoinChannelRequest(THANOSBOT_CHATS))
