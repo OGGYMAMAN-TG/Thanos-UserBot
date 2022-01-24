@@ -39,8 +39,8 @@ async def send(event):
     else:
         await edit_or_reply(event, "File not found..... Kek")
 
-@REBELBOT.on(admin_cmd(pattern="install$", outgoing=True))
-@REBELBOT.on(sudo_cmd(pattern="install$", allow_sudo=True))
+@THANOSBOT.on(admin_cmd(pattern="install$", outgoing=True))
+@THANOSBOT.on(sudo_cmd(pattern="install$", allow_sudo=True))
 async def install(event):
     if event.fwd_from:
         return
@@ -94,8 +94,8 @@ async def uninstall(h1m4n5hu0p):
     except OSError as e:
         await h1m4n5hu0p.edit("Error: %s : %s" % (dir_path, e.strerror))
 
-@REBELBOT.on(admin_cmd(pattern=r"unload (?P<shortname>\w+)$"))
-@REBELBOT.on(sudo_cmd(pattern=r"upload (?P<shortname>\w+)$", allow_sudo=True))
+@THANOSBOT.on(admin_cmd(pattern=r"unload (?P<shortname>\w+)$"))
+@THANOSBOT.on(sudo_cmd(pattern=r"upload (?P<shortname>\w+)$", allow_sudo=True))
 async def unload(event):
     if event.fwd_from:
         return
@@ -111,8 +111,8 @@ async def unload(event):
         )
 
 
-@REBELBOT.on(admin_cmd(pattern=r"load (?P<shortname>\w+)$"))
-@REBELBOT.on(sudo_cmd(pattern=r"load (?P<shortname>\w+)$", allow_sudo=True))
+@THANOSBOT.on(admin_cmd(pattern=r"load (?P<shortname>\w+)$"))
+@THANOSBOT.on(sudo_cmd(pattern=r"load (?P<shortname>\w+)$", allow_sudo=True))
 async def load(event):
     if event.fwd_from:
         return
