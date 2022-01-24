@@ -41,12 +41,6 @@ else:
         bot.start()
 
 
-from telethon.tl.functions.channels import JoinChannelRequest
-
-try:
-    bot(JoinChannelRequest(THANOSBOT_CHATS))
-
-
 import glob
 path = 'userbot/plugins/*.py'
 files = glob.glob(path)
@@ -59,6 +53,11 @@ for name in files:
 import userbot._core
 
 print(f"""Hello sir i am THANOS!! THANOS VERSION :- {THANOSversion} YOUR THANOS IS READY! FOR CHECK YOUR BOT WORKING OR NOT PLEASE TYPE (.thanos/.ping) ENJOY YOUR BOT! JOIN FOR MORE FUTURE UPDATES @thanosBot_chats .""")
+
+from telethon.tl.functions.channels import JoinChannelRequest
+
+try:
+    bot(JoinChannelRequest(THANOSBOT_CHATS))
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
