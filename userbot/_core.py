@@ -15,8 +15,8 @@ REBEL_logo = "./REBEL75/REBELBOT_logo.jpg"
 h1m4n5hu0p = THANOSBOT.uid
 REBEL = f"[{DEFAULTUSER}](tg://user?id={h1m4n5hu0p})"
 
-@REBELBOT.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
-@REBELBOT.on(sudo_cmd(pattern=r"send (?P<shortname>\w+)", allow_sudo=True))
+@THANOSBOT.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
+@THANOSBOT.on(sudo_cmd(pattern=r"send (?P<shortname>\w+)", allow_sudo=True))
 async def send(event):
     if event.fwd_from:
         return
