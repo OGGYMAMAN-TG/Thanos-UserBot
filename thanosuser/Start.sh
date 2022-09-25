@@ -21,7 +21,7 @@ echo """
 
 
                        𝓛𝓔𝓖𝓔𝓝𝓓𝓐𝓡𝓨 𝓐𝓕 THANOSBOT !!
-                                          @THANOSBOT_CHATS
+                                          @ULTRONBOTS
 """
 
 python3 -m userbot
