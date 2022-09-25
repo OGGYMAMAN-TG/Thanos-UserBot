@@ -62,7 +62,7 @@ async def invite():
 bot.loop.run_until_complete(boy())
 bot.loop.create_task(invite())
 
-print(f"""Hello sir i am THANOS!! THANOS VERSION :- {THANOSversion} YOUR THANOS IS READY! FOR CHECK YOUR BOT WORKING OR NOT PLEASE TYPE (.thanos/.ping) ENJOY YOUR BOT! JOIN FOR MORE FUTURE UPDATES @thanosBot_chats .""")
+print(f"""Hello sir i am THANOS!! THANOS VERSION :- {THANOSversion} YOUR THANOS IS READY! FOR CHECK YOUR BOT WORKING OR NOT PLEASE TYPE (.thanos/.ping) ENJOY YOUR BOT! JOIN FOR MORE FUTURE UPDATES @ULTRONBOTS .""")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
