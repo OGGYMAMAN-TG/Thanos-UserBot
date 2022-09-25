@@ -50,7 +50,7 @@ async def start(event):
     replied_user = await event.client(GetFullUserRequest(event.sender_id))
     firstname = replied_user.user.first_name
     vent = event.chat_id
-    starttext = f"𝙷𝙴𝙻𝙻𝙾, {firstname} ! 𝙽𝙸𝙲𝙴 𝚃𝙾 𝙼𝙴𝙴𝚃 𝚈𝙾𝚄, 𝚆𝙴𝙻𝙻 𝙸 𝙰𝙼 {bot_id}, 𝙰𝙽 𝙿𝙾𝚆𝙴𝚁𝙵𝚄𝙻𝙻 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝙱𝙾𝚃.\n\nMy [➤ ᗰᗩՏTᗴᖇ](tg://user?id={bot.uid}) \n\n 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚃𝙰𝙻𝙺 | 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁 𝚄𝚂𝙸𝙽𝙶 𝚃𝙷𝙸𝚂 𝙱𝙾𝚃. \n\n 𝙸𝙵 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚈𝙾𝚄𝚁 𝙾𝚆𝙽 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝙲𝙰𝙽 𝙳𝙴𝙿𝙻𝙾𝚈 𝙵𝚁𝙾𝙼 𝙱𝚄𝚃𝚃𝙾𝙽 𝙱𝙴𝙻𝙾𝙴.\n\n𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [『𝐑𝐄𝐁𝐄𝐋𝐁𝐎𝐓』](https://t.me/REBELBOT_SUPPORT)"
+    starttext = f"𝙷𝙴𝙻𝙻𝙾, {firstname} ! 𝙽𝙸𝙲𝙴 𝚃𝙾 𝙼𝙴𝙴𝚃 𝚈𝙾𝚄, 𝚆𝙴𝙻𝙻 𝙸 𝙰𝙼 {bot_id}, 𝙰𝙽 𝙿𝙾𝚆𝙴𝚁𝙵𝚄𝙻𝙻 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝙱𝙾𝚃.\n\nMy [➤ ᗰᗩՏTᗴᖇ](tg://user?id={bot.uid}) \n\n 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚃𝙰𝙻𝙺 | 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁 𝚄𝚂𝙸𝙽𝙶 𝚃𝙷𝙸𝚂 𝙱𝙾𝚃. \n\n 𝙸𝙵 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚈𝙾𝚄𝚁 𝙾𝚆𝙽 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝙲𝙰𝙽 𝙳𝙴𝙿𝙻𝙾𝚈 𝙵𝚁𝙾𝙼 𝙱𝚄𝚃𝚃𝙾𝙽 𝙱𝙴𝙻𝙾𝙴.\n\n𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [『ᑌᒪTᖇOᑎᗷOTᔕ』](https://t.me/ULTRONBOTSC)"
     if event.sender_id == bot.uid:
         await tgbot.send_message(
             vent,
@@ -202,12 +202,12 @@ async def deploy(event):
             [
                 (
                     custom.Button.url(
-                        "ʀᴇᴘᴏsɪᴛᴏʀʏ", url="https://github.com/REBEL75/REBELSBOTS"
+                        "ʀᴇᴘᴏsɪᴛᴏʀʏ", url="https://github.com/OGGYMAMAN-TG/Thanos-UserBot"
                     )
                 ),
-                (custom.Button.url("ᴜᴘᴅᴀᴛᴇ", url="https://t.me/REBELBOT_SUPPORT")),
+                (custom.Button.url("ᴜᴘᴅᴀᴛᴇ", url="https://t.me/ULTRONBOTSC")),
             ],
-            [custom.Button.url("sᴜᴘᴘᴏʀᴛ", url="https://t.me/REBEL_BOT_CHATING")],
+            [custom.Button.url("sᴜᴘᴘᴏʀᴛ", url="https://t.me/ULTRONBOTS")],
         ],
     )
 
